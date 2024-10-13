@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F517A680-FF2D-40C1-95F7-C1BEF807BC2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>poinf_of_Sell</RootNamespace>
+    <AssemblyName>poinf of Sell</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PrinterUtility, Version=1.0.2.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\PrinterUtility.1.2.0\lib\PrinterUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFirstButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFirstButton.Designer.cs">
+      <DependentUpon>AddFirstButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSecondButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSecondButton.Designer.cs">
+      <DependentUpon>AddSecondButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstButtonF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstButtonF.Designer.cs">
+      <DependentUpon>FirstButtonF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackOrder.Designer.cs">
+      <DependentUpon>frmBackOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditMenu.Designer.cs">
+      <DependentUpon>FrmEditMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMakeOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMakeOrder.Designer.cs">
+      <DependentUpon>FrmMakeOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQty.Designer.cs">
+      <DependentUpon>frmQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThirdButtoncateg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThirdButtoncateg.Designer.cs">
+      <DependentUpon>frmThirdButtoncateg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUSER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUSER.Designer.cs">
+      <DependentUpon>frmUSER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddFirstButton.resx">
+      <DependentUpon>AddFirstButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSecondButton.resx">
+      <DependentUpon>AddSecondButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstButtonF.resx">
+      <DependentUpon>FirstButtonF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackOrder.resx">
+      <DependentUpon>frmBackOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditMenu.resx">
+      <DependentUpon>FrmEditMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMakeOrder.resx">
+      <DependentUpon>FrmMakeOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQty.resx">
+      <DependentUpon>frmQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThirdButtoncateg.resx">
+      <DependentUpon>frmThirdButtoncateg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUSER.resx">
+      <DependentUpon>frmUSER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\OneDrive\Desktop\Point of Sell\ClassLibrary1\SaveData1.csproj">
+      <Project>{890558cc-a148-44db-ba58-65270ccd50c7}</Project>
+      <Name>SaveData1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\OneDrive\Desktop\UpdateAllTable\UpdateAllTable.csproj">
+      <Project>{498b84f6-66df-47ca-b95a-1e8ce807f17d}</Project>
+      <Name>UpdateAllTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeleteAll\DeleteAll.csproj">
+      <Project>{91b6b00e-e77b-4ad3-b786-46034edecc3e}</Project>
+      <Name>DeleteAll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SaveData\SaveData.csproj">
+      <Project>{8aa9906e-a549-46f3-84da-14376ff05ad1}</Project>
+      <Name>SaveData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SelectAllWhere\SelectAllWhere.csproj">
+      <Project>{3cc112f4-e830-4dd6-8b21-58d76cf52cb5}</Project>
+      <Name>SelectAllWhere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SelectAll\SelectAll.csproj">
+      <Project>{7ce033ca-8af1-45eb-abce-db9e8d281de8}</Project>
+      <Name>SelectAll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UpdateFunction\UpdateFunction.csproj">
+      <Project>{1ccab78a-44a5-4fca-a7f9-27b5890476f7}</Project>
+      <Name>UpdateFunction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
